@@ -1,0 +1,31 @@
+{
+  "name": "word-o-mat",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
+  "main": "lib/index.js",
+  "contributors": [
+    "Nina Stössinger",
+    "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)"
+  ],
+  "dependencies": {
+    "alpha-sort": "1.0.2",
+    "build-regex-group": "0.1.0",
+    "extend": "3.0.0",
+    "underscore.contains": "0.0.1"
+  },
+  "devDependencies": {
+    "glob": "5.0.15",
+    "mocha": "2.3.3",
+    "napa": "2.0.2",
+    "should": "7.1.1"
+  },
+  "napa": {
+    "word-o-mat": "https://github.com/ninastoessinger/word-o-mat"
+  },
+  "scripts": {
+    "install": "napa",
+    "test": "mocha test",
+    "build": "node build.js"
+  }
+}
