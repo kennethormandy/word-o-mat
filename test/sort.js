@@ -35,4 +35,21 @@ describe('sort', function () {
     should(mat.result[3]).equal('Looking out on my life as if there was no there there')
     done()
   })
+  it('length', function (done) {
+    var opts = { sort: 'length', minLength: 1, maxLength: 100, wordCount: 10 }
+    var mat = wordomat(opts, [
+      'Supercalifragilisticexpialidocious',
+      'Pneumonoultramicroscopicsilicovolcanoconiosis',
+      'Honorificabilitudinitatibus',
+      'a',
+      'Donaudampfschiffahrtselektrizitätenhauptbetriebswerkbauunterbeamtengesellschaft',
+      'Δήμητρα μέΆπω Κόραν τε ΚΆυμένοιο άΆοΧον'
+    ])
+    for (var i = 0; i < (mat.result.length - 1); i++) {
+      should(mat.result[i + 1].length).aboveOrEqual(mat.result[i].length)
+    }
+    should(mat.result[0]).equal('a')
+    should(mat.result.length).equal(6)
+    done()
+  })
 })
