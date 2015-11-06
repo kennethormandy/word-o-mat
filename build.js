@@ -16,20 +16,16 @@ fs.readdir(inpath, function (err, files) {
 })
 
 var convert = function (infile) {
-
   var outfile = path.resolve(__dirname + '/lib/resources/' + infile.split(path.extname(infile))[0] + '.json')
-
   var list = fs
     .readFileSync(path.resolve(inpath, infile), 'utf8')
     .split('*****')[1]
     .split('\n')
-    .map(function(e) { return e.trim() })
-    .filter(function(e) { return (e.length > 0) })
-    // .filter(function(e) { return e.charAt(0).toLowerCase() === 'n' })
+    .map(function (e) { return e.trim() })
+    .filter(function (e) { return (e.length > 0) })
+    // .filter(function (e) { return e.charAt(0).toLowerCase() === 'n' })
     .sort(function (a, b) {
-      return a.toLowerCase().localeCompare(b.toLowerCase());
+      return a.toLowerCase().localeCompare(b.toLowerCase())
     })
-
   fs.writeFileSync(outfile, JSON.stringify(list, null, 2))
-
 }

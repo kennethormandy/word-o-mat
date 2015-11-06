@@ -35,5 +35,4 @@ describe('sort', function () {
     should(mat.result[3]).equal('Looking out on my life as if there was no there there')
     done()
   })
-
 })
