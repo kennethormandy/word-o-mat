@@ -3,10 +3,11 @@ var wordomat = require('../')
 var should = require('should')
 
 var fieldTrip = ['Riley', 'orange juice', 'Marisol', 'pretzels', 'Dan', 'beer', 'Spencer', 'water', 'Kenneth', 'coffee', 'Frances', 'snacks']
+var opts = { requiredLetters: 'oiS', sort: 'alphabetical', minLength: 1, maxLength: 100 }
 
 describe('case', function () {
   it('keep', function (done) {
-    var opts = { requiredLetters: 'oiS', sort: 'alphabetical', case: 'keep', minLength: 1, maxLength: 100 }
+    opts.case = 'keep'
     var mat = wordomat(opts, fieldTrip)
     should(mat.result.length).equal(5)
     should(mat.result.indexOf('coffee')).be.above(-1)
@@ -27,7 +28,7 @@ describe('case', function () {
     done()
   })
   it('capital', function (done) {
-    var opts = { requiredLetters: 'oiS', sort: 'alphabetical', case: 'capital', minLength: 1, maxLength: 100 }
+    opts.case = 'capital'
     var mat = wordomat(opts, fieldTrip)
     should(mat.result.length).equal(5)
     should(mat.result.indexOf('coffee')).equal(-1)
@@ -52,7 +53,7 @@ describe('case', function () {
     done()
   })
   it('lower', function (done) {
-    var opts = { requiredLetters: 'oiS', sort: 'alphabetical', case: 'lower', minLength: 1, maxLength: 100 }
+    opts.case = 'lower'
     var mat = wordomat(opts, fieldTrip)
     should(mat.result.length).equal(5)
     should(mat.result.indexOf('coffee')).be.above(-1)
@@ -71,7 +72,7 @@ describe('case', function () {
     done()
   })
   it('upper', function (done) {
-    var opts = { requiredLetters: 'oiS', sort: 'alphabetical', case: 'upper', minLength: 1, maxLength: 100 }
+    opts.case = 'upper'
     var mat = wordomat(opts, fieldTrip)
     should(mat.result.length).equal(5)
     should(mat.result.indexOf('coffee')).equal(-1)
