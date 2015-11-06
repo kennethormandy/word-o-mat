@@ -12,7 +12,7 @@ describe('language', function () {
     should(mat.result[4]).not.equal('Arabië')
     done()
   })
-  it('dutch', function (done) {
+  it('Dutch', function (done) {
     opts.lang = 'dutch'
     var mat = wordomat(opts)
     should(mat.result.length).equal(10)
