@@ -1,7 +1,7 @@
 {
   "name": "word-o-mat",
   "version": "0.0.0",
-  "description": "Generate a list of words, based on your specific requirements, for type specimens, type sketching, spacing, and more.",
+  "description": "JavaScript version of Nina Stössinger’s word-o-mat: generate words for type specimens, spacing, and more.",
   "author": "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
   "main": "lib/index.js",
   "contributors": [
