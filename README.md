@@ -27,7 +27,7 @@ console.log(mat.result)
 From here, you can start to pass in your own options to get the exact kind of words or phrases you are looking for:
 
 ```js
-var wordomat = require('../')
+var wordomat = require('word-o-mat')
 
 var mat = wordomat({
   wordCount: 5,               // Total number of words
