@@ -101,4 +101,18 @@ describe('case', function () {
     should(mat.result.indexOf('COFFEE')).be.above(-1)
     done()
   })
+  it('upper with UTF-8', function (done) {
+    opts.requiredLetters = 'î'
+    opts.case = 'upper'
+    opts.requiredLettersOnly = true
+    var mat = wordomat(opts, [ 'île', 'gît', 'îles', 'naît', 'aîné' ])
+    should(mat.result.length).equal(5)
+    should(mat.result.indexOf('île')).equal(-1)
+    should(mat.result.indexOf('Île')).equal(-1)
+    should(mat.result.indexOf('ÎLE')).be.above(-1)
+    should(mat.result.indexOf('aîné')).equal(-1)
+    should(mat.result.indexOf('Aîné')).equal(-1)
+    should(mat.result.indexOf('AÎNÉ')).be.above(-1)
+    done()
+  })
 })
