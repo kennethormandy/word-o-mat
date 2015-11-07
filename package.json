@@ -2,11 +2,18 @@
   "name": "word-o-mat",
   "version": "0.1.0",
   "description": "JavaScript version of Nina Stössinger’s word-o-mat: generate words for type specimens, spacing, and more.",
-  "main": "lib/index.js",
   "author": "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
   "contributors": [
     "Nina Stössinger <nina@typologic.nl>        (http://typologic.nl)",
     "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)"
+  ],
+  "main": "lib/index.js",
+  "repository": "kennethormandy/word-o-mat",
+  "license": "MIT",
+  "ignore": [
+    "test",
+    "build.js",
+    "preview.gif"
   ],
   "dependencies": {
     "alpha-sort": "1.0.2",
@@ -14,7 +21,7 @@
     "build-regex-group": "0.1.0",
     "change-case": "2.3.0",
     "extend": "3.0.0",
-    "underscore.contains": "0.0.1"
+    "lodash.contains": "2.4.3"
   },
   "devDependencies": {
     "glob": "5.0.15",
@@ -26,7 +33,6 @@
   "napa": {
     "word-o-mat": "https://github.com/ninastoessinger/word-o-mat"
   },
-  "ignore": ["test", "build.js", "preview.gif"],
   "scripts": {
     "lint": "standard",
     "install": "napa",
