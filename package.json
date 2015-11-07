@@ -26,6 +26,7 @@
   "napa": {
     "word-o-mat": "https://github.com/ninastoessinger/word-o-mat"
   },
+  "ignore": ["test", "build.js", "preview.gif"],
   "scripts": {
     "lint": "standard",
     "install": "napa",
