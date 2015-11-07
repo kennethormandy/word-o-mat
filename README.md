@@ -1,8 +1,6 @@
 # word-o-mat
 
-Looking for words that contain _q_ but not _u_? Or French words that use an _a_, a _g_, at least one ascender, and one diagonal, but only the ones you_ve marked green? Or words in which to see a specific letter combination, like _fk_ or _Yc_? This is the sort of thing that word-o-mat can help you with.
-
-This is an npm module based on [Nina Stössinger’s amazing RoboFont extension](https://github.com/ninastoessinger/word-o-mat) that generates words for use in type specimens, type sketching, spacing, testing etc.
+Looking for words that contain _q_ but not _u_? Or French words that use an _a_, a _g_? Generate a list of words, based on your specific requirements, for type specimens, type sketching, spacing, and more. This is an npm module based on [Nina Stössinger’s amazing RoboFont extension](https://github.com/ninastoessinger/word-o-mat).
 
 ## Getting started
 
