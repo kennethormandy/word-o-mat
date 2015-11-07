@@ -90,4 +90,15 @@ describe('case', function () {
     should(mat.result.indexOf('SPENCER')).be.above(-1)
     done()
   })
+  it('upper with required letters only', function (done) {
+    opts.requiredLetters = 'ff'
+    opts.case = 'upper'
+    opts.requiredLettersOnly = true
+    var mat = wordomat(opts, fieldTrip)
+    should(mat.result.length).equal(1)
+    should(mat.result.indexOf('coffee')).equal(-1)
+    should(mat.result.indexOf('Coffee')).equal(-1)
+    should(mat.result.indexOf('COFFEE')).be.above(-1)
+    done()
+  })
 })
