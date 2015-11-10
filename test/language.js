@@ -8,43 +8,43 @@ describe('language', function () {
   it('none specified', function (done) {
     opts.lang = false
     var mat = wordomat(opts)
-    should(mat.result.length).equal(10)
-    should(mat.result[4]).not.equal('Arabië')
+    should(mat.data.length).equal(10)
+    should(mat.data[4]).not.equal('Arabië')
     done()
   })
   it('Dutch', function (done) {
     opts.lang = 'dutch'
     var mat = wordomat(opts)
-    should(mat.result.length).equal(10)
-    should(mat.result[4]).equal('Arabië')
+    should(mat.data.length).equal(10)
+    should(mat.data[4]).equal('Arabië')
     done()
   })
   it('Catalan', function (done) {
     opts.lang = 'catalan'
     var mat = wordomat(opts)
-    should(mat.result.length).equal(10)
-    should(mat.result[4]).equal('abadane')
+    should(mat.data.length).equal(10)
+    should(mat.data[4]).equal('abadane')
     done()
   })
   it('Latin', function (done) {
     opts.lang = 'latin'
     var mat = wordomat(opts)
-    should(mat.result.length).equal(10)
-    should(mat.result[0]).equal('Abdēra')
+    should(mat.data.length).equal(10)
+    should(mat.data[0]).equal('Abdēra')
     done()
   })
   it('Polish', function (done) {
     opts.lang = 'polish'
     var mat = wordomat(opts)
-    should(mat.result.length).equal(10)
-    should(mat.result[0]).equal('absolutnie')
+    should(mat.data.length).equal(10)
+    should(mat.data[0]).equal('absolutnie')
     done()
   })
   it('Vietnamese', function (done) {
     opts.lang = 'vietnamese'
     var mat = wordomat(opts)
-    should(mat.result.length).equal(10)
-    should(mat.result[0]).equal('Bình')
+    should(mat.data.length).equal(10)
+    should(mat.data[0]).equal('Bình')
     done()
   })
 })

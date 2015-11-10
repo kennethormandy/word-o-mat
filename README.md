@@ -19,7 +19,7 @@ var mat = wordomat({
   wordCount: 5
 })
 
-console.log(mat.result)
+console.log(mat.data)
 // Returns something like…
 // ['económicamente', 'számára', 'ascents', 'mataran', 'spalla']
 ```
@@ -40,7 +40,7 @@ var mat = wordomat({
   sort: 'alphabetical'        // And sort them alphabetically
 })
 
-console.log(mat.result)
+console.log(mat.data)
 // Returns something like…
 // ['CONNAÎTRA', 'CONNAÎTRE', 'CONNAÎTREZ', 'CONTREMAÎTRE', 'DÉCHAÎNÉ']
 ```
