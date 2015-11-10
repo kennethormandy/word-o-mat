@@ -1,6 +1,6 @@
 {
   "name": "word-o-mat",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "JavaScript version of Nina Stössinger’s word-o-mat: generate words for type specimens, spacing, and more.",
   "author": "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
   "contributors": [
