@@ -35,9 +35,9 @@
   },
   "scripts": {
     "lint": "standard",
-    "install": "napa",
     "test": "mocha",
     "posttest": "npm run lint",
+    "prebuild": "napa",
     "build": "node build.js"
   }
 }
