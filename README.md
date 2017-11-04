@@ -1,6 +1,6 @@
 # word-o-mat
 
-Looking for words that contain _q_ but not _u_? Or French words that use an _a_, a _g_? Generate a list of words, based on your specific requirements, for type specimens, type sketching, spacing, and more. This is an npm module based on [Nina Stössinger’s amazing RoboFont extension](https://github.com/ninastoessinger/word-o-mat).
+Looking for words that contain _q_ but not _u_? Or French words that use an _a_, a _g_? Generate a list of words, based on your specific requirements, for type specimens, type sketching, spacing, and more. This is a library for Node.js based on [Nina Stössinger’s amazing RoboFont extension](https://github.com/ninastoessinger/word-o-mat).
 
 ## Getting started
 
