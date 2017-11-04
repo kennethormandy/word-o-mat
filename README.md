@@ -83,5 +83,5 @@ If you’d like to update the word lists, please open a Pull Request against Nin
 
 [The MIT License (MIT)](LICENSE.md)
 
-Copyright © 2015 [Kenneth Ormandy](http://kennethormandy.com/)<br>
-Copyright © 2014–2015 [Nina Stössinger](http://typologic.nl/)
+Copyright © 2014–2015 [Nina Stössinger](http://ninastoessinger.com/)<br>
+Copyright © 2015–2017 [Kenneth Ormandy](http://kennethormandy.com/)

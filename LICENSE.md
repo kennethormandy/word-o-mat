@@ -1,7 +1,7 @@
 The MIT License (MIT)
 
-Copyright © 2014–2015 [Nina Stössinger](http://typologic.nl/)<br>
-Copyright © 2015 [Kenneth Ormandy](http://kennethormandy.com/)
+Copyright © 2014–2015 [Nina Stössinger](http://ninastoessinger.com/)<br>
+Copyright © 2015–2017 [Kenneth Ormandy](http://kennethormandy.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
