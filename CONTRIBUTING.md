@@ -1,6 +1,6 @@
 # Contributing
 
-If you’d like to update the word lists, please open a Pull Request against Nina’s repo, rather than this one. The included JSON files are build from those source files automatically.
+If you’d like to update the word lists, please open a Pull Request against Nina’s repo, rather than this one: [ninastoessinger/word-o-mat](https://github.com/ninastoessinger/word-o-mat). The included JSON files are build from those source files automatically.
 
 To run the project locally, first clone it by running the following command in your terminal:
 
