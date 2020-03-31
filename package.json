@@ -7,6 +7,10 @@
     "Nina Stössinger <nina@frerejones.com>      (http://ninastoessinger.com)",
     "Kenneth Ormandy <hello@kennethormandy.com> (https://kennethormandy.com)"
   ],
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
   "main": "lib/index.js",
   "repository": "https://github.com/kennethormandy/word-o-mat",
   "license": "MIT",
@@ -16,19 +20,20 @@
     "preview.gif"
   ],
   "dependencies": {
-    "alpha-sort": "1.0.2",
-    "array-shuffle": "1.0.0",
+    "alpha-sort": "~1.0.2",
+    "array-shuffle": "~1.0.0",
     "build-regex-group": "0.1.0",
-    "change-case": "2.3.0",
-    "extend": "3.0.0",
-    "lodash.contains": "2.4.3"
+    "lodash.includes": "^4.0.0",
+    "lower-case": "2.0.1",
+    "title-case": "3.0.2",
+    "upper-case": "2.0.1"
   },
   "devDependencies": {
-    "glob": "5.0.15",
-    "mocha": "2.3.3",
-    "napa": "2.0.2",
-    "should": "7.1.1",
-    "standard": "5.3.1"
+    "glob": "^7.0",
+    "mocha": "^2.3.3",
+    "napa": "^3.0.0",
+    "should": "^7.1.1",
+    "standard": "latest"
   },
   "napa": {
     "word-o-mat": "https://github.com/ninastoessinger/word-o-mat"
