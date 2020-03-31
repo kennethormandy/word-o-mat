@@ -105,7 +105,7 @@ describe('case', function () {
     opts.requiredLetters = 'î'
     opts.case = 'upper'
     opts.requiredLettersOnly = true
-    var mat = wordomat(opts, [ 'île', 'gît', 'îles', 'naît', 'aîné' ])
+    var mat = wordomat(opts, ['île', 'gît', 'îles', 'naît', 'aîné'])
     should(mat.data.length).equal(5)
     should(mat.data.indexOf('île')).equal(-1)
     should(mat.data.indexOf('Île')).equal(-1)

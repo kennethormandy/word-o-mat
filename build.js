@@ -2,7 +2,7 @@
 
 var fs = require('fs')
 var path = require('path')
-var inpath = path.resolve(__dirname + '/node_modules/word-o-mat/word-o-mat.roboFontExt/resources')
+var inpath = path.resolve('./node_modules/word-o-mat/word-o-mat.roboFontExt/resources')
 
 fs.readdir(inpath, function (err, files) {
   if (err) {
@@ -16,7 +16,8 @@ fs.readdir(inpath, function (err, files) {
 })
 
 var convert = function (infile) {
-  var outfile = path.resolve(__dirname + '/lib/resources/' + infile.split(path.extname(infile))[0] + '.json')
+  var filename = infile.split(path.extname(infile))[0] + '.json'
+  var outfile = path.resolve('./lib/resources/', filename)
   var list = fs
     .readFileSync(path.resolve(inpath, infile), 'utf8')
     .split('*****')[1]
