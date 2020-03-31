@@ -4,11 +4,11 @@
   "description": "JavaScript version of Nina Stössinger’s word-o-mat: generate words for type specimens, spacing, and more.",
   "author": "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
   "contributors": [
-    "Nina Stössinger <nina@typologic.nl>        (http://typologic.nl)",
-    "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)"
+    "Nina Stössinger <nina@frerejones.com>      (http://ninastoessinger.com)",
+    "Kenneth Ormandy <hello@kennethormandy.com> (https://kennethormandy.com)"
   ],
   "main": "lib/index.js",
-  "repository": "kennethormandy/word-o-mat",
+  "repository": "https://github.com/kennethormandy/word-o-mat",
   "license": "MIT",
   "ignore": [
     "test",
