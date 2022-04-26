@@ -1,4 +1,4 @@
-// ISC via http://git.io/vlOXz
+// ISC via https://github.com/npm/npm-expansions/blob/5322c9dd9716927622fffa89e8756931faa11d9c/bin/build.js
 
 var fs = require('fs')
 var path = require('path')
